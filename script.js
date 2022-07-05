@@ -9,6 +9,7 @@ const form = document.getElementById('form');
 const search = document.getElementById('search');
 const SEARCH_URL = BASE_URL + '/search/movie?'+API_KEY;
 
+
 getMovie(API_URL);
 
 function getMovie(url){
@@ -28,7 +29,7 @@ function showMovie(data){
         offset = Math.floor(Math.random() * (9 - 0 + 1) + 0)
         movieEl.innerHTML = `
         
-        <img src="${IMG_URL + poster_path}" id="img1" alt="${title}" height="100%" width="100%">
+        <img src="${IMG_URL + poster_path}" id="image" alt="${title}" height="100%" width="100%">
 
                             <div class="star"><i class="fa fa-star" style="color:#F5C518;"></i><span class="${getColor(vote_average-offset)}">
                                     ${vote_average-offset}</span>
@@ -78,3 +79,18 @@ function showMovie(data){
             getMovie(API_URL);
         }
     })
+
+    const img = document.querySelectorAll('image');
+
+    img.forEach(img => {
+      img.addEventListener('error', function handleError() {
+        const defaultImage =
+          'https://image.tmdb.org/t/p/w500null';
+    
+        img.src = defaultImage;
+        img.alt = 'default';
+      });
+    });
+    
+
+        
