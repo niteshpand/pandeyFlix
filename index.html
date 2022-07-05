@@ -47,7 +47,7 @@
                     <div class="slider-main" id="slider-main">
                         <div id="main">
                             <div class="content">
-                                <img src="./RRR.jpg" id="img1" alt="hero_in_horse" height="100%" width="100%">
+                                <img src="" id="img1" alt="hero_in_horse" height="100%" width="100%">
 
                                 <div class="star"><i class="fa fa-star" style="color:#F5C518;"></i><span class="green">
                                         6.3</span>
@@ -97,38 +97,7 @@
             sliderMain.prepend(content[content.length - 1]);
         }
     </script>
-    <!-- <script>
-        // const api_url = 'https://api.themoviedb.org/3/movie/550?api_key=a7f991f704db0db5e08f2e503690bf28'
-        const api_url = 'https://api.themoviedb.org/3/movie/popular?api_key=a7f991f704db0db5e08f2e503690bf28&language=en-US&page=1'
 
-        getMOVIE();
-        async function getMOVIE() {
-            const response = await fetch(api_url);
-            const data = await response.json();
-            // const { poster1 } = data;
-            // document.getElementById(pos1).textContent = poster1;
-            result = data.results
-            html_str = '';
-            result.forEach(element => {
-
-            });
-
-            document.getElementById("movieTitle_1").innerHTML = data.results[0].original_title;
-            document.getElementById("movieTitle_2").innerHTML = data.results[1].original_title;
-            document.getElementById("movieTitle_3").innerHTML = data.results[2].original_title;
-            document.getElementById("movieTitle_4").innerHTML = data.results[3].original_title;
-            document.getElementById("movieTitle_5").innerHTML = data.results[4].original_title;
-            document.getElementById("movieTitle_6").innerHTML = data.results[5].original_title;
-
-            document.getElementById("img1").innerHTML = "<img src=\'https://image.tmdb.org/t/p/original/61PVJ06oecwvcBisoAQu6SDfdcS.jpg'>"
-
-
-        }
-        // getMovie();
-        // const data = JSON.parse(api_url);
-
-        // document.getElementById("demo").innerHTML = data.original_title;
-    </script> -->
     <script src="./script.js"></script>
 </body>
 

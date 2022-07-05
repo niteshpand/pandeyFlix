@@ -5,6 +5,9 @@ const BASE_URL = 'https://api.themoviedb.org/3';
 const API_URL = BASE_URL + '/discover/movie?primary_release_year=2010&sort_by=vote_average.desc&' + API_KEY;
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 const main = document.getElementById('main');
+const form = document.getElementById('form');
+const search = document.getElementById('search');
+const SEARCH_URL = BASE_URL + '/search/movie?'+API_KEY;
 
 getMovie(API_URL);
 
@@ -63,3 +66,15 @@ function showMovie(data){
             return 'red'
         }
     }
+
+    form.addEventListener('submit',(e)=>{
+        e.preventDefault();
+
+        const searchTerm = search.value;
+
+        if(searchTerm){
+            getMovie(SEARCH_URL +'&query='+searchTerm)
+        }else{
+            getMovie(API_URL);
+        }
+    })
