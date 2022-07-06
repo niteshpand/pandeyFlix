@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .root {
@@ -74,6 +76,7 @@ input.search {
   overflow: hidden;
   height: 150px;
 }
+
 .slider-main {
   position: absolute;
   width: 91%;
@@ -118,24 +121,29 @@ input.search {
 
 .content {
   display: inline-block;
-  height: 510px;
+  height: 520px;
   width: 200px;
   color: white;
   background-color: #1a1a1a;
   font-family: "Roboto", sans-serif;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
+  position: sticky;
+  overflow-x: hidden;
 }
 
 .star {
   padding-top: 15px;
   padding-left: 10px;
 }
+
 .review {
+  height: 40px;
   padding-left: 10px;
 }
 
-.show > a > p {
+.show>a>p {
   background-color: #060505;
   border: none;
   color: #5799ef;
@@ -154,7 +162,7 @@ input.search {
   margin-right: 10px;
 }
 
-.trailer > a > p {
+.trailer>a>p {
   background-color: #1a1a1a;
   border: none;
   color: whitesmoke;
@@ -167,6 +175,7 @@ input.search {
   cursor: pointer;
   margin-left: 10px;
 }
+
 .arrow {
   cursor: pointer;
   position: absolute;
@@ -195,9 +204,11 @@ input.search {
   background: black;
   opacity: 0.7;
 }
+
 .fa-chevron-right:hover {
   color: rgb(239, 180, 70);
 }
+
 .fa-chevron-right {
   cursor: pointer;
 }
