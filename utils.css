@@ -1,0 +1,20 @@
+.flex {
+    display: flex;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.Uppercase {
+    text-transform: uppercase;
+}
+
+.semi-bold {
+    font-weight: bolder;
+    color: whitesmoke;
+}

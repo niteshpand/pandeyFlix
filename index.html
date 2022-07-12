@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css">
+    <link rel="stylesheet" href="./utils.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
@@ -25,9 +26,36 @@
 
         <div class="container fluid">
             <header>
-                <form id="form">
-                    <input type="text" placeholder="search" id="search" class="search">
-                </form>
+                <nav class="flex item-center justify-center">
+                    <div class="left flex item-center">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png" />
+                        <ul class="flex item-center justify-center Uppercase semi-bold">
+                            <li>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828726.png" />
+                            </li>
+                            <li>menu</li>
+                        </ul>
+                    </div>
+                    <ul class="flex item-center justify-center">
+                        <li>
+                            <form id="form">
+                                <input type="text" placeholder="search IMDb" id="search" class="search">
+                            </form>
+                        </li>
+                    </ul>
+                    <div class="right flex">
+                        <ul class="flex item-center justify-center semi-bold">
+                            <li>
+                                <img src="https://www.scfltd.com/wp-content/uploads/2015/10/IMDB-Pro-logo.png" />
+                            </li>
+                            <li>Watchlist</li>
+                            <li>Sign In</li>
+                            <li>En</li>
+                        </ul>
+                    </div>
+
+                </nav>
             </header>
             <div class="main">
 
@@ -89,6 +117,7 @@
     <script>
         var sliderMain = document.getElementById("slider-main");
         var content = sliderMain.getElementsByClassName("content");
+
         function next() {
             sliderMain.append(content[0]);
         }
