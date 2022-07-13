@@ -10,14 +10,18 @@
   position: relative;
 }
 
+.IMDBb_logo {
+  margin: -12px -2px 0px;
+}
+
 .left li img {
   width: 25px;
   height: 20px;
 }
 
 .right img {
-  width: 64px;
-  height: 32px;
+  width: 70px;
+  height: 42px;
   position: relative;
 }
 

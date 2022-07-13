@@ -27,14 +27,14 @@ function showMovie(data) {
         const { title, original_title, poster_path, vote_average } = content;
         const movieEl = document.createElement(`div`);
         movieEl.classList.add(`content`);
-        offset = Math.floor(Math.random() * (9 - 0 + 1) + 0)
+        // offset = Math.floor(Math.random() * (10) + 1)
         movieEl.innerHTML = `
 
             <img src="${IMG_URL + poster_path}" id="img" alt="${title}">
 
 
-            <div class="star"><i class="fa fa-star" style="color:#F5C518;"></i><span class="${getColor(vote_average - offset)}">
-                                    ${vote_average - offset}</span> 
+            <div class="star"><i class="fa fa-star" style="color:#F5C518;"></i><span class="${getColor(vote_average)}">
+                                    ${vote_average}</span> 
                                     &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-star-o" aria-hidden="true"
                     style="color:#5799ef;"></i></div> <br>
                         <div class="review">
@@ -81,12 +81,12 @@ form.addEventListener('submit', (e) => {
         getMovie(API_URL);
     }
 })
-var broken = "/w500null";
+
 const img = document.querySelectorAll("img");
 // get all links
 // console.log(img);
 img.forEach(img => {
-    if (img.src.endsWith(broken)) {
+    if (img.src(IMG_URL)) {
         img.style.display = "none";
     };
 });
