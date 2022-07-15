@@ -26,29 +26,37 @@
 
         <div class="container fluid">
             <header>
-                <nav class="flex item-center justify-center">
+                <nav class=" nav_bar flex item-center justify-center">
                     <div class="left flex item-center">
                         <div class="IMDBb_logo">
                             <img
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png" />
                         </div>
-                        <ul class="flex item-center justify-center Uppercase semi-bold">
+                        <ul class="flex item-center justify-center Uppercase semi-bold color">
                             <li>
                                 <img src="https://cdn-icons-png.flaticon.com/512/1828/1828726.png" /> &ensp; MENU
-
                             </li>
 
                         </ul>
                     </div>
-                    <ul class="flex item-center justify-center">
-                        <li>
-                            <form id="form">
-                                <input type="text" placeholder="search IMDb" id="search" class="search">
-                            </form>
-                        </li>
-                    </ul>
-                    <div class="right flex">
+                    <div class="middle">
                         <ul class="flex item-center justify-center semi-bold">
+                            <li class="size background flex item-center justify-center">
+                                All<img src="./images/toggle3.png" />
+                            </li>
+                            <li class="flex item-center justify-center ">
+                                <form id="form">
+                                    <input type="text" placeholder="search IMDb" id="search" class="search">
+                                </form>
+                            </li>
+                            <li>
+                                <img src="./images/search.jpg" />
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right flex">
+                        <ul class="flex item-center justify-center semi-bold color">
                             <li>
                                 <img src="https://www.scfltd.com/wp-content/uploads/2015/10/IMDB-Pro-logo.png" />
                             </li>
@@ -78,7 +86,7 @@
                     <div class="slider-main" id="slider-main">
                         <div id="main">
                             <div class="content">
-                                <img src="" id="img" alt="poster">
+                                <img src="api_img" id="img" alt="poster">
 
                                 <div class="star"><i class="fa fa-star" style="color:#F5C518;"></i><span class="green">
                                         6.3</span>

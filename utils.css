@@ -16,5 +16,19 @@
 
 .semi-bold {
     font-weight: bolder;
-    color: whitesmoke;
+    color: whitesmok;
+}
+
+.background {
+    background-color: #f6f3f3;
+}
+
+.color {
+    color: #f6f3f3;
+}
+
+.size {
+    padding-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 2px;
 }
