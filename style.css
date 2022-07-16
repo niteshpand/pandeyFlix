@@ -61,16 +61,27 @@ nav ul li {
 input.search {
   background-color: #f5f5fb;
   height: auto;
-  width: 100%;
-  border: 2px solid rgb(58, 56, 53);
+  width: 266%;
   font-size: 1rem;
   color: rgb(247, 244, 244);
 }
 
-.middle li img {
-  height: 35%;
-  width: 35%;
-  border: 2px solid whitesmoke;
+.srch_icon {
+
+  margin-left: 1025%;
+  padding-top: 5%;
+  height: 19%;
+  width: 62%;
+}
+
+.all {
+  padding-top: 10%;
+}
+
+.toggle {
+  padding-top: 27%;
+  height: 75%;
+  width: 27%;
 }
 
 
@@ -261,8 +272,4 @@ input.search {
 
 .fa-chevron-right {
   cursor: pointer;
-}
-
-form {
-  margin: 21px 0 20px;
 }
