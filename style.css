@@ -4,27 +4,6 @@
   padding: 0;
 }
 
-.left img {
-  width: 64px;
-  height: 32px;
-  position: relative;
-}
-
-.IMDBb_logo {
-  margin: -12px -2px 0px;
-}
-
-.left li img {
-  width: 25px;
-  height: 20px;
-}
-
-.right img {
-  width: 70px;
-  height: 42px;
-  position: relative;
-}
-
 .root {
   --primary-color: #19191b;
   --secondary-color: #373b69;
@@ -48,41 +27,52 @@ body {
 
 header {
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
   background-color: #19191b;
 }
 
+.nav_bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+
+.left img {
+  width: 73%;
+  height: auto;
+  position: relative;
+}
+
+.left li img {
+  width: 19%;
+  height: auto;
+}
+
+.left {
+  width: 25%;
+}
+
+
 nav ul li {
   list-style: none;
-  padding: 0 12px;
 }
 
 input.search {
   background-color: #f5f5fb;
   height: auto;
-  width: 117%;
-  padding: 5px;
+  width: 100%;
   border: 2px solid rgb(58, 56, 53);
   font-size: 1rem;
   color: rgb(247, 244, 244);
 }
 
 .middle li img {
-  height: 26px;
-  width: 30px;
-  margin: -10px 0 0;
+  height: 35%;
+  width: 35%;
   border: 2px solid whitesmoke;
 }
 
-.nav_bar {
-  width: 100%;
-  justify-content: space-between;
-}
-
-.middle input {
-  padding: 4px 129px 4px 84px;
-}
 
 .search:focus {
   outline: 0;
@@ -95,6 +85,17 @@ input.search {
 
 .search:hover {
   color: #24231f;
+}
+
+.right {
+  width: 53%;
+  height: auto;
+  position: relative;
+}
+
+.right img {
+  width: 73.5%;
+  height: auto;
 }
 
 .star span {

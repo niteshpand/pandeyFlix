@@ -28,7 +28,6 @@
 }
 
 .size {
-    padding-top: 8px;
-    margin-bottom: 8px;
-    border-radius: 2px;
+    width: 50%;
+    height: auto;
 }
