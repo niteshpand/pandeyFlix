@@ -33,8 +33,12 @@
 }
 
 .size_t {
-    margin-top: .2%;
-    width: 14%;
-    height: 18.8%;
-    border-radius: 3px;
+    width: 10.5%;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin-bottom: 30px
+}
+
+.padding {
+    padding-top: 5px;
 }

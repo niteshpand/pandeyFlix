@@ -61,27 +61,26 @@ nav ul li {
 input.search {
   background-color: #f5f5fb;
   height: auto;
-  width: 266%;
+  width: 227%;
   font-size: 1rem;
   color: rgb(247, 244, 244);
 }
 
 .srch_icon {
 
-  margin-left: 1025%;
+  margin-left: 910%;
   padding-top: 5%;
-  height: 19%;
-  width: 62%;
+  width: 24px;
 }
 
 .all {
   padding-top: 10%;
+  padding-left: 5px;
 }
 
 .toggle {
-  padding-top: 27%;
-  height: 75%;
-  width: 27%;
+  width: 23%;
+  padding-left: 5px;
 }
 
 
@@ -105,7 +104,7 @@ input.search {
 }
 
 .right img {
-  width: 73.5%;
+  width: 54.5%;
   height: auto;
 }
 
