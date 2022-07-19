@@ -12,10 +12,9 @@
 html,
 body {
   width: 100%;
-  height: 110%;
+  height: auto;
   margin: 0;
   margin: 0;
-  padding: 5%;
   overflow-x: hidden;
 }
 
@@ -61,17 +60,16 @@ nav ul li {
 input.search {
   background-color: #f5f5fb;
   height: auto;
-  width: 227%;
+  width: 100%;
   font-size: 1rem;
   color: rgb(247, 244, 244);
 }
 
 .srch_icon {
-
-  margin-left: 910%;
-  padding-top: 5%;
-  width: 24px;
+  width: 30px;
+  padding-bottom: 10px;
 }
+
 
 .all {
   padding-top: 10%;
@@ -80,7 +78,6 @@ input.search {
 
 .toggle {
   width: 23%;
-  padding-left: 5px;
 }
 
 
@@ -98,14 +95,16 @@ input.search {
 }
 
 .right {
-  width: 53%;
+  width: 35%;
   height: auto;
   position: relative;
+  margin-right: -8%;
 }
 
 .right img {
-  width: 54.5%;
+  width: 92%;
   height: auto;
+  margin-right: 11%;
 }
 
 .star span {

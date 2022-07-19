@@ -1,5 +1,6 @@
 .flex {
     display: flex;
+    margin: auto;
 }
 
 .item-center {
@@ -16,7 +17,6 @@
 
 .semi-bold {
     font-weight: bolder;
-    color: whitesmok;
 }
 
 .background {
@@ -36,9 +36,21 @@
     width: 10.5%;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    margin-top: 21px;
+    padding-top: 1px;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
-.padding {
+/* .padding {
     padding-top: 5px;
+} */
+
+.width {
+    width: 100%;
+}
+
+.margin {
+    margin-top: 9%;
 }
