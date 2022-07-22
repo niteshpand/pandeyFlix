@@ -30,7 +30,6 @@ function showMovie(data) {
         movieEl.id = counter
         if (counter > 6) {
             movieEl.style.display = "none"
-
         }
 
 

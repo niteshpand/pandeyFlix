@@ -130,6 +130,7 @@ input.search {
 .slider wrap {
   position: relative;
   width: auto;
+  display: flex;
 }
 
 .slider-main {
@@ -193,6 +194,7 @@ input.search {
 } */
 
 .content {
+  display: inline-block;
   flex: 0 0 calc(100%/var(--item-per-screen));
   color: white;
   background-color: #1a1a1a;
