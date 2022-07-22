@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
         rel="stylesheet">
+    <!-- bootstrap font-awesome link -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- stylesheet link -->
     <link rel="stylesheet" href="./style.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
@@ -85,7 +87,7 @@
                     <p>Showtimes near you</p>
                 </div>
 
-                <div class="slider wrap">
+                <div class="slider wrap flex justify-center">
                     <div class="slider-main" id="slider-main">
                         <div id="main">
                             <div class="content">
@@ -121,25 +123,36 @@
                     </div>
 
                 </div>
-                <span class="arrow prev" onclick="prev()">&#10094;</i></span>
-                <span class="arrow next" onclick="next()">&#10095;</i>
-                </span>
-            </div>
 
-        </div>
+                <span class="arrow prev" onclick="prev()">&#10094;</i></span>
+                <span class="arrow next" onclick="next()">&#10095;</i></span>
+
+
+
+
+
+            </div>
     </section>
-    <script>
+    <!-- <script>
+
         var sliderMain = document.getElementById("slider-main");
         var content = sliderMain.getElementsByClassName("content");
 
         function next() {
             sliderMain.append(content[0]);
+            // slides[slidePosition - 1].style.display = "inline-block";
+            // setTimeout(sliderMain, 2000);
+            content[0].style.display = "inline-block"
+            content[5].style.display = "inline-block"
         }
 
         function prev() {
             sliderMain.prepend(content[content.length - 1]);
+
+            content[content.length - 1].style.display = "inline-block"
         }
-    </script>
+
+    </script> -->
 
     <script src="./script.js"></script>
 </body>

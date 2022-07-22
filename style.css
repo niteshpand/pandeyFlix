@@ -7,6 +7,7 @@
 .root {
   --primary-color: #19191b;
   --secondary-color: #373b69;
+  --slider-padding: 5rem;
 }
 
 html,
@@ -128,14 +129,16 @@ input.search {
 
 .slider wrap {
   position: relative;
-  overflow: hidden;
-  height: 150px;
   width: auto;
 }
 
 .slider-main {
-  position: absolute;
-  width: 87%;
+  --items-per-screen: 5;
+  --slider-index: 0;
+  display: flex;
+  flex-grow: 1;
+  margin: 0 var(--items-per-screen);
+  transform: translate(calc(var(--slider-index)*-100%));
   overflow: hidden;
 }
 
@@ -175,7 +178,7 @@ input.search {
   width: 190px;
 }
 
-.content {
+/* .content {
   display: inline-block;
   height: 472px;
   width: 169px;
@@ -187,6 +190,24 @@ input.search {
   margin-bottom: 20px;
   position: sticky;
   overflow-x: hidden;
+} */
+
+.content {
+  flex: 0 0 calc(100%/var(--item-per-screen));
+  color: white;
+  background-color: #1a1a1a;
+  font-family: "Roboto", sans-serif;
+  max-width: calc(100% / var(--item-per-screen));
+  padding: var(--img-gap);
+  border-radius: 1rem;
+  margin: 4px 13px 13px 13px;
+}
+
+@media (max-width:1000px) {
+  .slider-main {
+    --item-per-screen: 6;
+  }
+
 }
 
 .star {
